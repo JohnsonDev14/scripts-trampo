@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scripts de Atendimento</title>
+  <!-- JS externo -->
+  <script src="js/script.js"></script>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;800&display=swap" rel="stylesheet"/>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">💬</div>
+  <div>
+    <h1 class="">Scripts de <span>Transferencia</span></h1>
+    <div class="subtitle">Clique em copiar para usar no chat</div>
+  </div>
+</header>
+    <Button class="transfer-btn" onclick="irParaAtendimento()">Voltar</Button>
+    
+
+<!-- Transferencia -->
+<div class="divider">— Transferencia</div>
+<br>
+<div class="grid">
+
+  <div class="card" data-script="Com esse problema, infelizmente eu não consigo ajudar. Nesse caso é com o nosso suporte Geral, vou transferir o chat e eles vão solucionar o problema o quanto antes!">
+    <span class="tag-transf">Geral</span>
+
+    <!-- Geral -->
+    <div class="card-body">
+      <div class="script-label">Suporte Geral</div>
+      <div class="script-text">
+       Com esse problema, infelizmente eu não consigo ajudar. <br>
+    Nesse caso é com o nosso suporte Geral, vou transferir o chat e eles vão solucionar o problema o quanto antes!
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Geral -->
+
+      <!-- Comercial -->
+        <div class="card" data-script="Com esse problema, Nesse caso é com o nosso suporte comercial, entre em contato com eles pelo numero de Whatsapp 11 94018-4066">
+    <span class="tag-transf">Comercial</span>
+
+    <div class="card-body">
+      <div class="script-label">Suporte Geral</div>
+      <div class="script-text">
+       Com esse problema, infelizmente eu não consigo ajudar. <br>
+    Nesse caso é com o nosso suporte comercial, entre em contato com eles pelo numero de Whatsapp 11 94018-4066
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Comercial -->
+
+</div>
+
+<br>
+<br>
+
+
+<div class="toast" id="toast"></div>
+
+
+
+</body>
+</html>

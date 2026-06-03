@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scripts de Atendimento</title>
+  <!-- JS externo -->
+  <script src="js/script.js"></script>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@600;800&display=swap" rel="stylesheet"/>
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">💬</div>
+  <div>
+    <h1 class="">Scripts de <span>Atendimento</span></h1>
+    <div class="subtitle">Clique em copiar para usar no chat</div>
+  </div>
+</header>
+    <Button class="transfer-btn" onclick="irParaTransferencia()">Transferencia</Button>
+    
+
+<!-- Abertura -->
+<div class="divider">— Abertura</div>
+<br>
+<div class="grid">
+
+  <div class="card" data-script="Olá bom dia! Como posso ajudar?">
+    <span class="tag-aberturassa-abertura">Abertura</span>
+
+    <!-- Bom dia -->
+    <div class="card-body">
+      <div class="script-label">Manhã</div>
+      <div class="script-text">
+        Olá bom dia!<br>Como posso ajudar?
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Bom dia -->
+
+  <!-- Boa tarde -->
+
+    <div class="card" data-script="Olá boa tarde! Como posso ajudar?">
+    <span class="tag-aberturassa-abertura">Abertura</span>
+
+    <div class="card-body">
+      <div class="script-label">Tarde</div>
+      <div class="script-text">
+        Olá boa tarde!<br>Como posso ajudar?
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Boa tarde -->
+
+</div>
+
+<br>
+<br>
+
+
+<!-- Técnico -->
+<div class="divider">— Técnico</div>
+<br>
+<div class="grid">
+
+    <!-- Manutenção -->
+  <div class="card" data-script="Entendo. Poderia me passar o AnyDesk para eu dar uma verificada, por favor?">
+    <span class="tag-aberturassa-tec">Técnico</span>
+
+    <div class="card-body">
+      <div class="script-label">Manutenção</div>
+      <div class="script-text">
+        Entendo. <br>Poderia me passar o AnyDesk para eu dar uma verificada, por favor?
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Manutenção -->
+
+  <!-- Instalação -->
+    <div class="card" data-script="Entendo. Poderia me passar o AnyDesk para eu prosseguir com a Instalação, por favor?">
+    <span class="tag-aberturassa-tec">Técnico</span>
+
+    <div class="card-body">
+      <div class="script-label">Instalação</div>
+      <div class="script-text">
+        Entendo. <br>Poderia me passar o AnyDesk para eu prosseguir com a Instalação, por favor?
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Instalação -->
+
+</div>
+
+<br>
+<br>
+
+<!-- Finalizção -->
+<div class="divider">— Finalizção</div>
+<br>
+<div class="grid">
+
+  <!-- Finalização -->
+  <div class="card" data-script="Fico feliz em ter ajudado! Sempre que precisar, pode contar conosco novamente. Obrigado pela preferência! E, se possível, não esqueça de avaliar o atendimento positivamente.">
+    <span class="tag-aberturassa-tchau">Tchau</span>
+
+    <div class="card-body">
+      <div class="script-label">Finalizção</div>
+      <div class="script-text">
+        Fico feliz em ter ajudado! <br>
+        Sempre que precisar, pode contar conosco novamente. <br>
+        Obrigado pela preferência! E, se possível, não esqueça de avaliar o atendimento positivamente.
+      </div>
+    </div>
+
+    <button class="copy-btn" onclick="copyScript(this)">
+      Copiar
+    </button>
+  </div>
+  <!-- Finalização -->
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+
+
+</body>
+</html>
